@@ -25,6 +25,7 @@ Why Kotlin
 * excellent java/groovy interop
 
 Comparisons to Groovy:
+
 * Extension functions vs. extension modules
 * data classes vs POGOs
 * Nullability checks / no NPEs in Kotlin
