@@ -1,0 +1,33 @@
+From Groovy to Kotlin
+
+Hi, I'm Dan Maas, drmaas on Github (which I do use) and Twitter (which I don't use much), TheArchitect on LinkedInm and non-existent on Facebook etc. I'm a software engineer at Target working on shopping cart and order apis, in addition to data streaming and other backend systems. Most of our new applications are written in Kotlin (testing in Groovy), and some are written in Go. We use Cassandra a lot, and Postgres a little. We also use Kafka all over the place. I love learning new technologies, frameworks, design ideas, even some devops (but not that much, it's really hard). I have also written Javascript.
+
+How many of you are using the same programming language that you were using one year ago? What about two years ago? 5 years ago? 10 years ago? Most people change what they work on and how they work on it over time, sometimes very frequently, and sometimes less frequently, but change always occurs. Each of us wants to grow and become better as a person and as an employee. Or at least most of us, there have been times when I got worse. The point is that each of us is here because we make an effort to stay up to date in our fields. We want to be aware of the best possible tools at our disposal to build software faster, with fewer defects, more functionality, while having more fun.
+
+This is how I came to start using Kotlin. I have been using Groovy for a number of years, both for developing and for testing web applications, utilities, scripts, even Jenkins job DSL. I started thinking about what was next for me, and started reading about Kotlin. It was created by Jetbrains to address the shortcomings in other JVM languages, especially Scala, while providing a simpler experience, near-java compile times, and excellent interoperability with other JVM languages. It makes a lot of promises about how it will make one a happier developer, about how it would make one's job and life easier. Kotlin introduces a lot of good ideas, and also borrowed a lot of good ideas from other very good programming languages, including Groovy, Scala, C#, and Go.  I decided to try it first in a sample application. After analyzing the design of the code I wrote and performance testing it, I started to use it and encourage others on our team to use it in production-level applications.
+
+How many here use Groovy in their daily work? Ok, now how many of you are already using Kotlin? What about other JVM languages? To those of you already using Kotlin, you may find some of the information here boring or repetitive, but hopefully I am able to instill a perspective that you haven't heard before that will enhance your Kotlin skills.
+
+Given that, who is this talk geared towards? Developers who are curious. You moved beyond plain Java a while ago, and maybe embraced Groovy for the features that simplified your ability to write great applications. You embraced its ability to remove boilerplate code and its ability to enable functional programming concepts. You enjoyed the ability to use the existing ecosystem of Java libraries with near 100% interoperability. Maybe you used Grails or Spring Boot or Ratpack with Groovy. You leveraged features like extension modules, domain-specific languages (like Gradle), and dynamic typing to model your code after the problem space, and reduce code down to it's most basic elements.
+
+But Groovy is not the be-all end-all, or it least it wasn't for me.
+0) You can't have 'private fun'.
+1) If you like the compiler and your favorite IDE to catch errors for you, you have to explicitly remind each Groovy class to be statically typed. When this happens, you find that the compiler is very picky about identifying certain pieces of type information. This slows down your development and leaves you frustrated when you have to look up that the closure you just referenced is actually a Function5.
+2) If you want to write highly concurrent code, and let the machine decide how to manage the concurrency while at the same time keeping your code simple, you would use start by trying reactive programming or futures or GPars or Fibers or some variant thereof. This also complicates your code and makes debugging more difficult.
+3) You cannot completely escape NullPointerException hell.
+4) You have to use *lots* of annotations to make classes composable, simple, and behave in standard ways (equals hashcode tostring canonical AllArgsConstructor etc.).
+5) you can't have standalone functions and are stuck with static methods for that stuff.
+6) And other less than desirable patterns.
+
+So, Kotlin can help! You can write fun, performant, scalable, maintainable, and easy to read apps with fewer defects, while aligning the structure of your program more closely with the problem domain.
+
+What are some of the ways you can achieve this with Kotlin?
+0) You can have 'private fun'.
+1) The compiler is your friend.
+2) Coroutines and concurrency mechanisms allow you to write procedural code while delegating concurrency to the underlying machine.
+3) Eliminate NullPointerException.
+4) Extension functions, delegates, and data classes are also very nice.
+5) Express code as functions, classes, objects, or a mix of those.
+6) And other desirable patterns.
+
+Ok, shall we look at some examples?
