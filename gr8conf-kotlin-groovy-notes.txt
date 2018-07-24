@@ -35,9 +35,9 @@ Comparisons to Groovy:
 7) Control
 8) Type inference
 9) collection operators comparison and mutability
+10) Testing - Spock vs. Junit5 with mockito-kotlin, spek and kotlintest similar capabilities but found harder to use
 
 TODO
-* Testing - Spock vs. Kotlintest/Spek/Junit5 with mockito-kotlin
 * Kotlin provides delegation, lazy, lateinit keywords, Groovy has AST transformations (Delegate, Lazy, etc) via annotations
 * Kotlin has singleton object, groovy uses Java static methods
 

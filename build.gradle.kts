@@ -31,10 +31,24 @@ dependencies {
     compile("org.codehaus.groovy:groovy:2.5.0")
     compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.6")
     compile("me.drmaas:ratpack-kotlin-dsl:1.5.0")
+
+    // spock
+    compile("org.spockframework:spock-core:1.1-groovy-2.4")
+    compile("cglib:cglib:3.2.5")
+    compile("org.objenesis:objenesis:2.5.1")
+
+    // junit5
+    compile("com.nhaarman:mockito-kotlin:1.6.0")
+    compile("org.junit.jupiter:junit-jupiter-api:5.2.0")
+    compile("org.junit.jupiter:junit-jupiter-params:5.2.0")
+    runtime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
 }
 
 tasks {
     val wrapper by creating(Wrapper::class) {
         gradleVersion = "4.7"
+    }
+    withType(Test::class.java) {
+        useJUnitPlatform()
     }
 }
