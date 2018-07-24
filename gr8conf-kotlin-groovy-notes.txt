@@ -26,9 +26,15 @@ Why Kotlin
 
 Comparisons to Groovy:
 
-* Extension functions vs. extension modules
-* data classes vs POGOs
-* Nullability checks / no NPEs in Kotlin
+1) Extension functions vs. extension modules
+2) Nullability checks / no NPEs in Kotlin / var vs. val
+3) data classes vs POGOs
+4) constructors
+5) String templates and quotes
+6) functions
+7) Control
+8) Type inference
+
 * collection operators comparison
 * Kotlin is statically typed, Groovy requires CompileStatic
 * Groovy compileStatic with closures vs. kotlin
@@ -36,10 +42,8 @@ Comparisons to Groovy:
 * Closures vs. lambdas
 * higher-order functions
 * sealed classes
-* if/else assignment vs. ternary
 * Concurrency - Groovy has CompletableFuture, GPars, and other libraries, Kotlin has coroutines/actors/channels/async-await and CompletableFuture and other libraries tools
 * mutability - Groovy requires some library, Kotlin has it built in
-* spread operator
 * Kotlin has no checked exceptions - same as Groovy
 * Kotlin provides delegation, lazy, lateinit keywords, Groovy has AST transformations (Delegate, Lazy, etc) via annotations
 * Kotlin has singleton object, groovy uses Java static methods
@@ -47,4 +51,6 @@ Comparisons to Groovy:
 * Groovy runtime metaprogramming - closest in kotlin would be kotlin reflection
 * Concise constructors in Kotlin vs. Java contructors or AST generated ones
 * Simple DSL example in each
+* Dependency injection - @Inject constructor notation
+* method interceptors/aop requires classes/functions to be open. default is closed (final)
 * Testing - Spock vs. Kotlintest/Spek/Junit5 with mockito-kotlin
