@@ -44,6 +44,9 @@ fun add(a : Int) : (Int) -> Int {
     return { x -> a + x }
 }
 
+//  closure in expression form
+fun add2(a:Int) = { x: Int -> a + x }
+
 // closure with function receiver
 class Commands {
     fun m1() {
