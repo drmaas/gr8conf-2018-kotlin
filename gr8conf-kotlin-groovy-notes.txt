@@ -1,4 +1,11 @@
-Why Kotlin
+Why Kotlin?
+
+Start here
+
+https://kotlinlang.org/docs/reference/
+https://try.kotlinlang.org/
+
+Goals of Language
 
 * Have fun
 * less code, more productivity
@@ -13,7 +20,6 @@ Why Kotlin
 * explicit mutable/immutable
 * when is more flexible than java switch, less than pattern matching scala
 * no checked exceptions to simplify how developers handle them
-* spread operator
 * data classes like @Canonical
 * sealed classes allow compile to deduce full set of allowable implementation types
 * delegation allows composition to be used instead of inheritance, and allows for creation of dsl languages (along with extension functions)
@@ -32,22 +38,23 @@ Comparisons to Groovy:
 4) constructors
 5) String templates and quotes
 6) functions
-7) Control
+7) Control structures
 8) Type inference
 9) collection operators comparison and mutability
 10) Testing - Spock vs. Junit5 with mockito-kotlin, spek and kotlintest similar capabilities but found harder to use
+11) Kotlin has singleton object, groovy uses Java static methods
+12) Kotlin provides delegation, lazy keywords, Groovy has AST transformations (Delegate, Lazy, etc) via annotations
+13) performance - kotlin roughly equivalent to groovy with CompileStatic
+14) Simple DSL example in each
+15)
 
 TODO
-* Kotlin provides delegation, lazy, lateinit keywords, Groovy has AST transformations (Delegate, Lazy, etc) via annotations
-* Kotlin has singleton object, groovy uses Java static methods
+* Concurrency - Groovy has CompletableFuture, GPars, and other libraries, Kotlin has coroutines/actors/channels/async-await and CompletableFuture and other libraries tools
 
 Other Topics
+* multiplatform support - compile to JVM, js, native
 * Kotlin has no checked exceptions - same as Groovy
-* higher-order functions
-* sealed classes
-* Concurrency - Groovy has CompletableFuture, GPars, and other libraries, Kotlin has coroutines/actors/channels/async-await and CompletableFuture and other libraries tools
 * Interoperability with Java examples for Kotlin and Groovy
 * Groovy runtime metaprogramming - closest in kotlin would be kotlin reflection
-* Simple DSL example in each
 * Dependency injection - @Inject constructor notation
 * method interceptors/aop requires classes/functions to be open. default is closed (final)

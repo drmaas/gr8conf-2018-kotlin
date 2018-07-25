@@ -20,7 +20,8 @@ fun main(args: Array<String>) {
     // vararg
     val a = arrayOf("1", "2", "3")
     v(*a)
-
+    // higher order
+    println(d(c))
 }
 
 // single expression function
@@ -33,6 +34,12 @@ fun b(arg: String): String {
 
 // function literal
 val c: (String) -> String = { arg -> "c: method: $arg"}
+val c1: (String) -> String = fun(arg: String): String {
+    return "c: method: $arg"
+}
+
+// higher order
+val d = { closure: (String) -> String -> closure("d") }
 
 // function expansion
 fun append(a : String,  calc : (String) -> String) : String {

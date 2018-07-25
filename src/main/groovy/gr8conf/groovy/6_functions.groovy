@@ -8,6 +8,8 @@ class Functions {
             println "inside"
             m2()
         }
+        // higher order
+        println f.c(f.a)
     }
 
     def a = { arg ->
@@ -16,6 +18,10 @@ class Functions {
 
     def b(String arg) {
         "b: method: $arg"
+    }
+
+    def c = { closure ->
+        closure("c")
     }
 
     def m1() {

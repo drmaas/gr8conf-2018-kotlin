@@ -31,6 +31,10 @@ dependencies {
     compile("org.codehaus.groovy:groovy:2.5.0")
     compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.6")
     compile("me.drmaas:ratpack-kotlin-dsl:1.5.0")
+    compile("org.codehaus.gpars:gpars:1.2.1")
+
+    // logging
+    compile("org.apache.logging.log4j:log4j-slf4j-impl:2.11.0")
 
     // spock
     compile("org.spockframework:spock-core:1.1-groovy-2.4")
