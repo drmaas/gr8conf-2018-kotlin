@@ -1,4 +1,4 @@
-From Groovy to Kotlin
+== From Groovy to Kotlin
 
 Hi, I'm Dan Maas, drmaas on Github (which I do use) and Twitter (which I don't use much), TheArchitect on LinkedInm and non-existent on Facebook etc. I'm a software engineer at Target working on shopping cart and order apis, in addition to data streaming and other backend systems. Most of our new applications are written in Kotlin (testing in Groovy), and some are written in Go. We use Cassandra a lot, and Postgres a little. We also use Kafka all over the place. I love learning new technologies, frameworks, design ideas, even some devops (but not that much, it's really hard). I have also written Javascript.
 

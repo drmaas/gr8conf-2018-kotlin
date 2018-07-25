@@ -1,11 +1,11 @@
-Why Kotlin?
+== Why Kotlin?
 
-Start here
+=== Start here
 
 https://kotlinlang.org/docs/reference/
 https://try.kotlinlang.org/
 
-Goals of Language
+=== Goals of Language
 
 * Have fun
 * less code, more productivity
@@ -30,7 +30,7 @@ Goals of Language
 - async/await similar to c# and others
 * excellent java/groovy interop
 
-Comparisons to Groovy:
+=== Comparisons to Groovy:
 
 1) Extension functions vs. extension modules
 2) Nullability checks / no NPEs in Kotlin / var vs. val
@@ -46,12 +46,10 @@ Comparisons to Groovy:
 12) Kotlin provides delegation, lazy keywords, Groovy has AST transformations (Delegate, Lazy, etc) via annotations
 13) performance - kotlin roughly equivalent to groovy with CompileStatic
 14) Simple DSL example in each
-15)
+15) Concurrency - Groovy has CompletableFuture, GPars, and other libraries, Kotlin has coroutines/actors/channels/async-await and CompletableFuture and other libraries tools
 
-TODO
-* Concurrency - Groovy has CompletableFuture, GPars, and other libraries, Kotlin has coroutines/actors/channels/async-await and CompletableFuture and other libraries tools
+=== Other Topics
 
-Other Topics
 * multiplatform support - compile to JVM, js, native
 * Kotlin has no checked exceptions - same as Groovy
 * Interoperability with Java examples for Kotlin and Groovy
