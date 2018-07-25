@@ -3,6 +3,7 @@
 === Start here
 
 https://kotlinlang.org/docs/reference/
+
 https://try.kotlinlang.org/
 
 === Goals of Language
@@ -33,20 +34,35 @@ https://try.kotlinlang.org/
 === Comparisons to Groovy:
 
 1) Extension functions vs. extension modules
+
 2) Nullability checks / no NPEs in Kotlin / var vs. val
+
 3) data classes vs POGOs
+
 4) constructors
+
 5) String templates and quotes
+
 6) functions
+
 7) Control structures
+
 8) Type inference
+
 9) collection operators comparison and mutability
+
 10) Testing - Spock vs. Junit5 with mockito-kotlin, spek and kotlintest similar capabilities but found harder to use
+
 11) Kotlin has singleton object, groovy uses Java static methods
+
 12) Kotlin provides delegation, lazy keywords, Groovy has AST transformations (Delegate, Lazy, etc) via annotations
+
 13) performance - kotlin roughly equivalent to groovy with CompileStatic
+
 14) Simple DSL example in each
+
 15) Concurrency - Groovy has CompletableFuture, GPars, and other libraries, Kotlin has coroutines/actors/channels/async-await and CompletableFuture and other libraries tools
+
 
 === Other Topics
 

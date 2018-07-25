@@ -1,6 +1,6 @@
 == From Groovy to Kotlin
 
-Hi, I'm Dan Maas, drmaas on Github (which I do use) and Twitter (which I don't use much), TheArchitect on LinkedInm and non-existent on Facebook etc. I'm a software engineer at Target working on shopping cart and order apis, in addition to data streaming and other backend systems. Most of our new applications are written in Kotlin (testing in Groovy), and some are written in Go. We use Cassandra a lot, and Postgres a little. We also use Kafka all over the place. I love learning new technologies, frameworks, design ideas, even some devops (but not that much, it's really hard). I have also written Javascript.
+Hi, I'm Dan Maas, drmaas on Github (which I do use) and Twitter (which I don't use much), TheArchitect on LinkedIn and non-existent on Facebook etc. I'm a software engineer at Target working on shopping cart and order apis, in addition to data streaming and other backend systems. Most of our new applications are written in Kotlin (testing in Groovy), and some are written in Go. We use Cassandra a lot, and Postgres a little. We also use Kafka all over the place. I love learning new technologies, frameworks, design ideas, even some devops (but not that much, it's really hard). I have also written Javascript.
 
 How many of you are using the same programming language that you were using one year ago? What about two years ago? 5 years ago? 10 years ago? Most people change what they work on and how they work on it over time, sometimes very frequently, and sometimes less frequently, but change always occurs. Each of us wants to grow and become better as a person and as an employee. Or at least most of us, there have been times when I got worse. The point is that each of us is here because we make an effort to stay up to date in our fields. We want to be aware of the best possible tools at our disposal to build software faster, with fewer defects, more functionality, while having more fun.
 
@@ -15,7 +15,7 @@ But Groovy is not the be-all end-all, or it least it wasn't for me.
 1) If you like the compiler and your favorite IDE to catch errors for you, you have to explicitly remind each Groovy class to be statically typed. When this happens, you find that the compiler is very picky about identifying certain pieces of type information. This slows down your development and leaves you frustrated when you have to look up that the closure you just referenced is actually a Function5.
 2) If you want to write highly concurrent code, and let the machine decide how to manage the concurrency while at the same time keeping your code simple, you would use start by trying reactive programming or futures or GPars or Fibers or some variant thereof. This also complicates your code and makes debugging more difficult.
 3) You cannot completely escape NullPointerException hell.
-4) You have to use *lots* of annotations to make classes composable, simple, and behave in standard ways (equals hashcode tostring canonical AllArgsConstructor etc.).
+4) You have to use *lots* of annotations to make classes composable, simple, and behave in standard ways (equals hashcode toString canonical AllArgsConstructor etc.).
 5) you can't have standalone functions and are stuck with static methods for that stuff.
 6) And other less than desirable patterns.
 
