@@ -1,22 +1,25 @@
 package gr8conf.kotlin
 
 import kotlinx.coroutines.experimental.CommonPool
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.experimental.async
 import kotlinx.coroutines.experimental.runBlocking
 import java.util.concurrent.atomic.AtomicInteger
+import kotlin.system.measureTimeMillis
 
 fun main(args: Array<String>) = runBlocking {
     val result = AtomicInteger(0)
-    for (i in 1..100000) {
-        launch(CommonPool) {
-            result.incrementAndGet()
-            println("${Thread.currentThread().name} $i")
+    val time = measureTimeMillis {
+        val jobs = (1..100000).map {
+            async(CommonPool) {
+                result.incrementAndGet()
+                println("${Thread.currentThread().name} $it")
+            }
         }
+        jobs.forEach { it.await() }
     }
 
-    delay(800) // rough estimate, about 800ms
     println(result)
+    println(time)
 }
 
 // can also produce values to a channel, read values from channel, fanout/fanin etc
