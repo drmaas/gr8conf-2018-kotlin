@@ -49,8 +49,8 @@ dependencies {
 }
 
 tasks {
-    val wrapper by creating(Wrapper::class) {
-        gradleVersion = "4.7"
+    withType(Wrapper::class.java) {
+        gradleVersion = "4.9"
     }
     withType(Test::class.java) {
         useJUnitPlatform()
